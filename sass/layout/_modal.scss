@@ -36,14 +36,14 @@
     transition: transform var(--duration) var(--cubic),
     opacity var(--duration) var(--cubic),
     z-index var(--duration) var(--cubic);
+}
 
-    & p {
-        display: block;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        text-align: center;
-        color: var(--primaryColor);
-        margin-bottom: 12px;
-    }
+.modal__text {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--primaryColor);
+    margin-bottom: 12px;
 }

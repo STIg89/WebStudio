@@ -21,7 +21,7 @@
           justify-content: space-between;
 }
 
-.modal__close-btn, .portfolio__filter-buttons, .client__link, .performance__card p, .benefits__thumb, .social__link, .primary-btn {
+.modal__close-btn, .portfolio__filter-buttons, .client__link, .performance__text, .benefits__thumb, .social__link, .primary-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,14 +261,16 @@ img {
   -ms-flex-preferred-size: calc((100% - var(--cardGap) * 3) / 4);
       flex-basis: calc((100% - var(--cardGap) * 3) / 4);
 }
-.benefits__card h3 {
+
+.benefits__sub-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.benefits__card p {
+
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondaryColor);
@@ -287,7 +289,8 @@ img {
 .performance__card {
   position: relative;
 }
-.performance__card p {
+
+.performance__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -312,22 +315,24 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__card h3 {
+
+.team__description {
+  padding: 30px 30px;
+}
+
+.team__sub-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 10px;
 }
-.team__card p {
+
+.team__text {
   line-height: 1.2;
   text-align: center;
   color: var(--secondaryColor);
   margin-bottom: 16px;
-}
-
-.team__description {
-  padding: 30px 30px;
 }
 
 .social__link--team {
@@ -610,7 +615,8 @@ img {
   transition: transform var(--duration) var(--cubic), opacity var(--duration) var(--cubic), z-index var(--duration) var(--cubic);
   transition: transform var(--duration) var(--cubic), opacity var(--duration) var(--cubic), z-index var(--duration) var(--cubic), -webkit-transform var(--duration) var(--cubic);
 }
-.modal p {
+
+.modal__text {
   display: block;
   font-weight: 700;
   font-size: 20px;
