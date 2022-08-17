@@ -1,11 +1,12 @@
 .header__contacts {
-    @extend %flexAc;
-    gap: 50px;
+    // @extend %flexAc;
+    // gap: 50px;
+    display: none;
 }
 
 .contacts__tel,
 .contacts__mail {
-    @extend %flexAc;
+    // @extend %flexAc;
     color: var(--secondaryColor);
     fill: currentColor;
     font-size: 14px;

@@ -2,5 +2,9 @@
     @extend %visibilityHidden;
 }
 .benefits__card-list {
-    @extend %flexSB;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }

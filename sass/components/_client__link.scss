@@ -1,6 +1,6 @@
 .client__link {
     @extend %flexAcJc;
-    width: 170px;
+    width: calc((100% - var(--cardGap)) / 2);
     height: 92px;
     border: 1px solid var(--iconG);
     border-radius: 4px;

@@ -25,7 +25,11 @@ img {
 .team,
 .clients,
 .card {
-    padding: 94px 0 94px 0;
+    padding: 60px 0 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0 94px 0;
+    }
 }
 
 .btn {

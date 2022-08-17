@@ -1,11 +1,19 @@
 .effective__title {
     margin: 0 auto 30px auto;
-    max-width: 696px;
+    max-width: 360px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
     color: var(--bgW);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
 }
+
+

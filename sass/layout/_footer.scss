@@ -4,8 +4,8 @@
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
 }
 
 .footer__address-item:not(:last-child) {
@@ -27,6 +27,6 @@
 }
 
 .footer__subscribe {
-    width: calc(50% - 15px);
-    margin-left: auto;
+    // width: calc(50% - 15px);
+    // margin-left: auto;
 }
