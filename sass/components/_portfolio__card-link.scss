@@ -15,6 +15,10 @@
     z-index: 0;
 }
 
+.portfolio__card-image {
+    width: 100%;
+}
+
 .portfolio__card-overlay {
     position: absolute;
     z-index: -1;

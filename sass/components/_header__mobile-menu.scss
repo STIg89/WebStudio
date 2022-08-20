@@ -1,0 +1,26 @@
+.header__mobile-menu {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-width: 480px;
+        width: 100%;
+        display: block;
+        background-color: var(--bgW);
+        padding: 48px 40px;
+        transform: translateY(0);
+        z-index: 2;
+        opacity: 1;
+        transition: transform var(--duration) var(--cubic),
+        z-index var(--duration) var(--cubic),
+        opacity var(--duration) var(--cubic);
+        }
+}
+
+.header__mobile-menu--is-hidden {
+        @media screen and (max-width: 767px) {
+        transform: translateY(-100%);
+        opacity: 0;
+        z-index: -1;
+        }
+}

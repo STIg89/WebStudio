@@ -1,16 +1,41 @@
 .header {
-    padding: 25px 0;
     border-bottom: 1px solid #ECECEC;
+    @media screen and (min-width: 768px) {
+        padding: 16px 0;
+    }
 }
 
 .header__container {
-    @extend %flexSB;
+    display: flex;
     align-items: center;
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+        padding-right: 0;
+        position: relative;
+    }
+    
+}
+
+.header__menu {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .header__nav {
-    @extend %flexAc;
+    display: flex;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-}
+
+    
+    
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        
+    }
+    }

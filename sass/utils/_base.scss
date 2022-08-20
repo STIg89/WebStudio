@@ -3,7 +3,11 @@ body {
     letter-spacing: 0.03em;
     color: var(--primaryColor);
     background: var(--bgW);
+
+    &.modal-open {
+        overflow: hidden;
     }
+}
 
     h1,
     h2,

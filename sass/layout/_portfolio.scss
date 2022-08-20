@@ -3,11 +3,17 @@
 }
 
 .portfolio__card-list {
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: var(--cardGap);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--cardGap);
 }
 
 .portfolio__card {
-    // flex-basis: calc((100% - var(--cardGap)*2) / 3);
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - var(--cardGap)) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - var(--cardGap)*2) / 3);
+    }
 }  

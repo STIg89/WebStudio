@@ -1,4 +1,8 @@
 .backdrop {
+    @media screen and (max-width: 767px) {
+        padding: 93px 15px;
+    }
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -11,6 +15,7 @@
     visibility var(--duration) var(--cubic),
     display var(--duration) var(--cubic),
     z-index var(--duration) var(--cubic);
+    overflow-y: scroll;
 }
 .backdrop--is-hidden {
     opacity: 0;
@@ -19,23 +24,40 @@
     z-index: -1;
 }
 .modal {
-    transform: translate(-50% , -50%) scale(0.7);
-    opacity: 0;
-    z-index: -1;
-    min-width: 528px;
+    margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
     padding: 40px;
     background: var(--bgW);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%) scale(1);
+    transform: scale(1);
     opacity: 1;
     z-index: 1;
     transition: transform var(--duration) var(--cubic),
     opacity var(--duration) var(--cubic),
     z-index var(--duration) var(--cubic);
+
+    .backdrop--is-hidden & {
+        transform: scale(0.7);
+        opacity: 0;
+        z-index: -1;
+
+        @media screen and (min-width: 768px) {
+            transform: translate(-50% , -50%) scale(0.7);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%) scale(1);
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
+    }
 }
 
 .modal__text {

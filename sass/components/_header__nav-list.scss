@@ -1,15 +1,30 @@
 .header__nav-list {
-    // display: flex;
-    // gap: 50px;
-    // display: none;
+    display: flex;
+    gap: 50px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 302px;
+    }
 }
 
 .nav-list__link {
-    padding: 32px 0;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    padding: 16px 0;
+    
+    @media screen and (min-width: 768px) {
+        padding: 32px 0;
+        font-size: 14px;
+        line-height: 1.2;
+    }
 }
 
 .nav-list__link--current {
     color: var(--accentColor);
+    @media screen and (min-width: 768px) {
     position: relative;
 
     &::after {
@@ -22,6 +37,6 @@
         height: 4px;
         background: var(--accentColor);
         border-radius: 2px;
-        pointer-events: none;
         }
+    }
 }

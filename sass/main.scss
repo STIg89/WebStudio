@@ -7,9 +7,14 @@
 @import 'components/social__list';
 
 @import 'layout/header';
+@import 'components/header__mobile-menu';
+@import 'components/mobile_menu-btn--close';
+@import 'components/mobile_soc-list';
+@import 'components/mobile_menu-btn';
 @import 'components/header__logo';
 @import 'components/header__nav-list';
 @import 'components/header__contacts';
+
 
 @import 'layout/effective';
 @import 'components/effective__title';

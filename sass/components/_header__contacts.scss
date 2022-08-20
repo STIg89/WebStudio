@@ -1,17 +1,63 @@
 .header__contacts {
-    // @extend %flexAc;
-    // gap: 50px;
-    display: none;
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+    
+}
+
+.contacts__tel {
+    font-size: 34px;
+    color: var(--accentColor);
+}
+
+.contacts__mail {
+    font-size: 24px;
+    color: var(--secondaryColor);
+    fill: currentColor;
 }
 
 .contacts__tel,
 .contacts__mail {
-    // @extend %flexAc;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    padding: 16px 0;
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
     color: var(--secondaryColor);
     fill: currentColor;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
-    font-weight: 500;
     padding: 5px 0;
-    gap: 10px;
+    gap: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 10px;
+        font-size: 14px;
+        padding: 17px 0;
+    }
+}
+
+.tel__icon,
+.mail__icon {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
