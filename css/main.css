@@ -61,8 +61,10 @@ body {
   color: var(--primaryColor);
   background: var(--bgW);
 }
-body.modal-open {
-  overflow: hidden;
+@media screen and (max-width: 767px) {
+  body.modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,
