@@ -5,6 +5,7 @@
 .portfolio__card-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     gap: var(--cardGap);
 }
 
