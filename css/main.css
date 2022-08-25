@@ -272,6 +272,8 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-shadow: 0 -300px 0px 300px var(--bgW);
+            box-shadow: 0 -300px 0px 300px var(--bgW);
   }
 }
 @media screen and (max-width: 480px) {

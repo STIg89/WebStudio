@@ -17,6 +17,7 @@
         opacity var(--duration) var(--cubic);
         display: flex;
         flex-direction: column;
+        box-shadow: 0 -300px 0px 300px var(--bgW);
         }
 
         @media screen and (max-width: 480px) {
