@@ -1004,7 +1004,7 @@ img {
   .portfolio__filter-buttons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 326px;
+    max-width: 326px;
   }
 }
 @media screen and (min-width: 768px) {
