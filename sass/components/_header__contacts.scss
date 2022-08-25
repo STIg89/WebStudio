@@ -22,12 +22,20 @@
 .contacts__tel {
     font-size: 34px;
     color: var(--accentColor);
+
+    @media screen and (max-width: 480px) {
+        font-size: 7.06vw;
+}
 }
 
 .contacts__mail {
     font-size: 24px;
     color: var(--secondaryColor);
     fill: currentColor;
+
+    @media screen and (max-width: 480px) {
+        font-size: 5vw;
+}
 }
 
 .contacts__tel,

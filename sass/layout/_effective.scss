@@ -3,7 +3,7 @@
     height: auto;
     margin: 0 auto;
     background: 
-    linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+    linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), 
     url('../img/hero-m.jpg') center no-repeat,
     var(--bgG);
     background-size: cover;
@@ -11,7 +11,7 @@
 
     @media (min-resolution: 192dpi) {
         background: 
-        linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+        linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
         url('../img/hero-m2x.jpg') center no-repeat,
         var(--bgG);
         background-size: cover;
@@ -20,14 +20,14 @@
     @media screen and (min-width: 768px) {
         max-width: 768px;
         background: 
-        linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+        linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
         url('../img/hero-t.jpg') center no-repeat,
         var(--bgG);
         background-size: cover;
 
         @media (min-resolution: 192dpi) {
             background: 
-            linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+            linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
             url('../img/hero-t2x.jpg') center no-repeat,
             var(--bgG);
             background-size: cover;
@@ -40,17 +40,21 @@
         padding: 200px 0;
 
         background: 
-        linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+        linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
         url('../img/hero-pc.jpg') center no-repeat,
         var(--bgG);
         background-size: cover;
 
         @media (min-resolution: 192dpi) {
             background: 
-            linear-gradient(90deg, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
+            linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)),
             url('../img/hero-pc2x.jpg') center no-repeat,
             var(--bgG);
             background-size: cover;
         }
     }
+}
+
+@supports (background-image: -webkit-image-set(url('../img/hero-m.webp') 1x)) {
+    .map {background-image: -webkit-image-set(url('../img/hero-m.webp') 1x) }
 }

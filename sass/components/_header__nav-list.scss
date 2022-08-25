@@ -5,7 +5,6 @@
     @media screen and (max-width: 767px) {
         flex-direction: column;
         gap: 32px;
-        margin-bottom: 302px;
     }
 }
 
@@ -14,6 +13,10 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     padding: 16px 0;
+
+    @media screen and (max-width: 480px) {
+        font-size: 8.33vw;
+    }
     
     @media screen and (min-width: 768px) {
         padding: 32px 0;

@@ -5,6 +5,7 @@
         top: 0;
         max-width: 480px;
         width: 100%;
+        min-height: 100vh;
         display: block;
         background-color: var(--bgW);
         padding: 48px 40px;
@@ -14,6 +15,12 @@
         transition: transform var(--duration) var(--cubic),
         z-index var(--duration) var(--cubic),
         opacity var(--duration) var(--cubic);
+        display: flex;
+        flex-direction: column;
+        }
+
+        @media screen and (max-width: 480px) {
+                padding: 10% 10vw;
         }
 }
 

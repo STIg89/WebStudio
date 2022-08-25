@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     gap: 10px;
 
+    @media screen and (max-width: 480px) {
+        gap: 2.08%;
+}
+
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -11,6 +15,10 @@
 .mobile_soc-item:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    @media screen and (max-width: 480px) {
+        padding-right: 2.08%;
+}
 }
 
 .mobile_soc-link {
@@ -20,4 +28,8 @@
     letter-spacing: 0.02em;
     color: var(--accentColor);
     padding: 16px 0;
+
+    @media screen and (max-width: 480px) {
+        font-size: 3.75vw;
+}
 }
