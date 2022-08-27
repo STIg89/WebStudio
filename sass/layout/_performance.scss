@@ -11,5 +11,5 @@
 }
 
 .performance__card-list {
-    @extend %flexSB;
+    @include flex(none, space-between);
 }

@@ -6,8 +6,7 @@
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
+    @include flex(center, none);
     @media screen and (max-width: 767px) {
         justify-content: space-between;
         padding-right: 0;
@@ -22,8 +21,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
+        @include flex(none, space-between);
         width: 100%;
     }
 }
@@ -36,7 +34,6 @@
     }
 
     @media screen and (min-width: 768px) {
-        align-items: center;
-        display: flex;
+        @include flex(center, none);
     }
     }

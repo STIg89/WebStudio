@@ -4,8 +4,7 @@
 .benefits__card-list {
 
     @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
+        @include flex(none, space-between);
         flex-wrap: wrap;
         gap: var(--cardGap);
     }

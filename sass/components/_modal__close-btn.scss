@@ -1,5 +1,5 @@
 .modal__close-btn {
-    @extend %flexAcJc;
+    @include flex;
     position: absolute;
     top: 8px;
     right: 8px;

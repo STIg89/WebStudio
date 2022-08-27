@@ -29,7 +29,7 @@
 }
 
 .benefits__thumb {
-    @extend %flexAcJc;
+    @include flex;
     height: 120px;
     background-color: var(--bgLG);
     margin-bottom: var(--cardGap);

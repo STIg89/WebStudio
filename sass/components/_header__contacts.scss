@@ -46,8 +46,7 @@
     padding: 16px 0;
 
     @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
+    @include flex(center, none);
     color: var(--secondaryColor);
     fill: currentColor;
     font-size: 12px;

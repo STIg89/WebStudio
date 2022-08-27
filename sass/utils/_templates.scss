@@ -1,17 +1,7 @@
-%flexSB {
+@mixin flex($ai:center, $jc:center) {
     display: flex;
-    justify-content: space-between;
-}
-
-%flexAcJc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-%flexAc {
-    display: flex;
-    align-items: center;
+    align-items: $ai;
+    justify-content: $jc;
 }
 
 %visibilityHidden {

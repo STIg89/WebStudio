@@ -3,7 +3,7 @@
 }
 
 .clients__list {
-    @extend %flexSB;
+    @include flex(none, space-between);
     flex-wrap: wrap;
     gap: var(--cardGap);
 }
